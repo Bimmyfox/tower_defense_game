@@ -26,9 +26,9 @@ public class PlayerControllerBall : MonoBehaviour
        
     void OnCollisionEnter(Collision other)
     {
-        if(other.gameObject.CompareTag("Tower"))
+        if(other.gameObject.CompareTag("PlayerTower") || other.gameObject.CompareTag("EnemyTower"))
         {
-            Debug.Log($"Hit {other.gameObject.name}");
+            // Debug.Log($"Hit {other.gameObject.name}");
         }
     }
 
